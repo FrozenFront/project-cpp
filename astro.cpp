@@ -10,15 +10,15 @@ public:
         temperature = T;
     }
     void get_mass(){
-    cout << 'Масса объекта: ' << mass;
+    cout << 'Mass: ' << mass;
     }
     void get_volume(){
-    cout << 'Объём объекта: ' << volume;
+    cout << 'Volume: ' << volume;
     }
     void get_temperature(){
-    cout << 'Средняя температура объекта: ' << temperature;
+    cout << 'Temperature: ' << temperature;
     }
     void get_density(){
-    cout << 'Средняя плотность объекта: ' << m / v;
+    cout << 'Average density: ' << m / v;
     }
 };
