@@ -71,9 +71,9 @@ Star(float L){
 
 void get_type(){
     if (radius > 6950000000 and radius < 6950000000 and luminosity > 3.827 * 10260 and luminosity < 3.827 * 1026000)
-        cout << 'Ãèãàíò';
+        cout << 'Ğ“Ğ¸Ğ³Ğ°Ğ½Ñ‚';
     if (mass > 2 * pow(10, 30) * 0.012 and mass < 2 * pow(10, 30) * 0.0767)
-        cout << 'Êàğëèê';
+        cout << 'ĞšĞ°Ñ€Ğ»Ğ¸Ğº';
 }
 
 Galaxy(float td){
@@ -103,36 +103,36 @@ float get_particle_number() {
 
 void get_true_colour(){
     if (temperature > 30000 and temperature < 60000)
-        cout << 'Ãîëóáîé';
+        cout << 'Ğ“Ğ¾Ğ»ÑƒĞ±Ğ¾Ğ¹';
     if (temperature > 10000 and temperature < 30000)
-        cout << 'Áåëî-ãîëóáîé';
+        cout << 'Ğ‘ĞµĞ»Ğ¾-Ğ³Ğ¾Ğ»ÑƒĞ±Ğ¾Ğ¹';
     if (temperature > 7500 and temperature < 10000)
-        cout << 'Áåëûé';
+        cout << 'Ğ‘ĞµĞ»Ñ‹Ğ¹';
     if (temperature > 6000 and temperature < 7500)
-        cout << 'Æ¸ëòî-áåëûé';
+        cout << 'Ã†Â¸Ã«Ã²Ã®-Ã¡Ã¥Ã«Ã»Ã©';
     if (temperature > 5000 and temperature < 6000)
-        cout << 'Æ¸ëòûé';
+        cout << 'Ã†Â¸Ã«Ã²Ã»Ã©';
     if (temperature > 3500 and temperature < 5000)
-        cout << 'Îğàíæåâûé';
+        cout << 'ÃÃ°Ã Ã­Ã¦Ã¥Ã¢Ã»Ã©';
     if (temperature > 2000 and temperature < 3500)
-        cout << 'Êğàñíûé';
+        cout << 'ĞšÑ€Ğ°ÑĞ½Ñ‹Ğ¹';
 }
 
 void get_visible_colour(){
     if (temperature > 30000 and temperature < 60000)
-        cout << 'Ãîëóáîé';
+        cout << 'ÃƒÃ®Ã«Ã³Ã¡Ã®Ã©';
     if (temperature > 10000 and temperature < 30000)
-        cout << 'Áåëî-ãîëóáîé è áåëûé';
+        cout << 'ÃÃ¥Ã«Ã®-Ã£Ã®Ã«Ã³Ã¡Ã®Ã© Ã¨ Ã¡Ã¥Ã«Ã»Ã©';
     if (temperature > 7500 and temperature < 10000)
-        cout << 'Áåëûé';
+        cout << 'ÃÃ¥Ã«Ã»Ã©';
     if (temperature > 6000 and temperature < 7500)
-        cout << 'Áåëûé';
+        cout << 'ÃÃ¥Ã«Ã»Ã©';
     if (temperature > 5000 and temperature < 6000)
-        cout << 'Æ¸ëòûé';
+        cout << 'Ã†Â¸Ã«Ã²Ã»Ã©';
     if (temperature > 3500 and temperature < 5000)
-        cout << 'Æåëòîâàòî-îğàíæåâûé';
+        cout << 'Ã†Ã¥Ã«Ã²Ã®Ã¢Ã Ã²Ã®-Ã®Ã°Ã Ã­Ã¦Ã¥Ã¢Ã»Ã©';
     if (temperature > 2000 and temperature < 3500)
-        cout << 'Îğàíæåâî-êğàñíûé';
+        cout << 'ÃÃ°Ã Ã­Ã¦Ã¥Ã¢Ã®-ÃªÃ°Ã Ã±Ã­Ã»Ã©';
 }
 
 
