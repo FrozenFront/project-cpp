@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <Astro.hpp>
 using namespace std;
 
 astro_object(float m, float v, float T){
