@@ -109,30 +109,30 @@ void get_true_colour(){
     if (temperature > 7500 and temperature < 10000)
         cout << 'Белый';
     if (temperature > 6000 and temperature < 7500)
-        cout << 'Æ¸ëòî-áåëûé';
+        cout << 'Жёлто-белый';
     if (temperature > 5000 and temperature < 6000)
-        cout << 'Æ¸ëòûé';
+        cout << 'Жёлтый';
     if (temperature > 3500 and temperature < 5000)
-        cout << 'Îðàíæåâûé';
+        cout << 'Оранжевый';
     if (temperature > 2000 and temperature < 3500)
         cout << 'Красный';
 }
 
 void get_visible_colour(){
     if (temperature > 30000 and temperature < 60000)
-        cout << 'Ãîëóáîé';
+        cout << 'Голубой';
     if (temperature > 10000 and temperature < 30000)
-        cout << 'Áåëî-ãîëóáîé è áåëûé';
+        cout << 'Бело-голубой и белый';
     if (temperature > 7500 and temperature < 10000)
-        cout << 'Áåëûé';
+        cout << 'Белый';
     if (temperature > 6000 and temperature < 7500)
-        cout << 'Áåëûé';
+        cout << 'Белый';
     if (temperature > 5000 and temperature < 6000)
-        cout << 'Æ¸ëòûé';
+        cout << 'Жёлтый';
     if (temperature > 3500 and temperature < 5000)
-        cout << 'Æåëòîâàòî-îðàíæåâûé';
+        cout << 'Желтовато-оранжевый';
     if (temperature > 2000 and temperature < 3500)
-        cout << 'Îðàíæåâî-êðàñíûé';
+        cout << 'Оранжево-красный';
 }
 
 
