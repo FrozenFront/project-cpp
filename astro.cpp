@@ -1,20 +1,16 @@
 #include <iostream>
 #include <cmath>
+#include "Astro.hpp"
 using namespace std;
 
-astro_object(float m, float v, float T){
+astro_object(float m, float T){
     mass = m;
     temperature = T;
 }
 
-void get_mass(){
+float get_mass(){
     cout << 'Mass: ' << mass;
     return(mass);
-}
-
-void get_volume(){
-    cout << 'Volume: ' << volume;
-    return(volume);
 }
 
 float get_temperature(){
