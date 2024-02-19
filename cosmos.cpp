@@ -126,6 +126,4 @@ float NeutronStar::kerVolume() {
 	return 4 / 3 * 3.14 * pow(radius, 3) * 0.3;
 }
 
-int main() {
-	return 0;
-}
+
