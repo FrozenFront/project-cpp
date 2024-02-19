@@ -4,92 +4,128 @@
 #include "cosmos.hpp"
 
 using namespace std;
-astro_object(float m, float v, float T) {
+astro_object::astro_object(float m, float v, float T) {
 	mass = m;
 	volume = v;
 	temperature = T;
 }
-void get_mass() {
-	cout << "Масса: " << mass;
+void astro_object::get_mass() {
+	cout << "Mass: " << mass;
 	return mass;
 }
-void get_volume() {
-	cout << "Объём: " << volume;
+void astro_object::get_volume() {
+	cout << "Volume: " << volume;
 	return volume;
 }
-void get_temp() {
-	cout << "Температура: " << temperature;
+void astro_object::get_temp() {
+	cout << "Temperature " << temperature;
 	return temperature; 
 }
-float get_density() {
+float astro_object::get_density() {
 	cin >> volume;
-	cout << "Средняя плотность: " << m / volume;
+	cout << "Average density: " << m / volume;
 	return m / volume;
 }
 
-Comet(bool t, float n) {
+Comet::Comet(bool t, float n) {
 	tailExists = t;
 	nucPer = n;
 }
-bool hasTail() {
+bool Comet::hasTail() {
 	return tailExists;
 }
-float getCoreMass() {
+float Comet::getCoreMass() {
 	return mass * nuclearPercentage / 100;
 }
 
-float crustVolume() {
+float Comet::crustVolume() {
 	return 1.25 * volume;
 }
 
-Asteroid(char c, char s, bool e, float r, float g) {
+Asteroid::Asteroid(char c, char s, bool e, float r, float g) {
 	chemEl = c;
 	spectralClass = s;
 	emitsLight = e;
 	radius = r;
 	gravitation = g;
 }
-char spectralClassType(char chemEl) {
-	if (chemEl == "Углерод") {
+char Asteroid::spectralClassType(char chemEl) {
+	if (chemEl == "Carbon") {
 		return "C";
 	}
-	else if (chemEl == "Кремний") {
+	else if (chemEl == "Silicium") {
 		return "S";
 	}
 	else {
 		return "M";
 	}
 }
-void getSpectralClassType() {
+void Asteroid::getSpectralClassType() {
 	cout << spectralClassType(chemEl) << endl;
 }
-float getGravitation() {
+float Asteroid::getGravitation() {
 	return 6.67 * mass / radius;
 }
-bool hasLight() {
+bool Asteroid::hasLight() {
 	return emitsLight;
 }
 
-Meteorite(float s, char r) {
+Meteorite::Meteorite(float s, char r) {
 	speed = s;
 	energy = e;
 	regmaForm = r;
 }
-float getEnergy() {
+float Meteorite::getEnergy() {
 	return mass * pow(speed, 2) / 2;
 }
-void regmaForm() {
+void Meteorite::regmaForm() {
 	cout << regmaForm << endl; 
 }
 
-BlackHole(char m) {
+BlackHole::BlackHole(char m) {
 	massType = m;
 }
-char massType{
+char BlackHole::massType{
 	if (mass <= 2 * pow(10, 30)) {
-		return "Околосолнечный класс";
+		return "Near-solar class";
 	}
 	else {
-		return "Массивный класс";
+		return "Massive class";
 	}
+}
+
+Quazar::Quazar(char t) {
+	type = t;
+}
+void Quazar::get_qTraits() {
+	if (type == "Merging galaxies") {
+		cout << "gas-rich galaxies collide" << endl;
+	}
+	else if (type == "Starburst") {
+		cout << "dust-obscured star formation" << endl;
+	}
+	else if (type == "Blue quazar") {
+		cout << "evolved jets weak winds" << endl;
+	}
+	else if (type == "Red quazar") {
+		cout << "young jets strong winds" << endl;
+	}
+	else if (type == "Early-type galaxy") {
+		cout << "dormant galaxy" << endl;
+	}
+}
+
+NeutronStar::NeutronStar(float r) {
+	radius = r;
+}
+
+float NeutronStar::barkDensity() {
+	return get_density() * 0.4;
+}
+float NeutronStar::kerVolume() {
+	return 4 / 3 * 3.14 * pow(radius, 3) * 0.3;
+}
+
+int main() {
+	return 0;
 }
