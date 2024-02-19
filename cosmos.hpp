@@ -54,3 +54,20 @@ public:
 	BlackHole(char m);
 	char massType();
 };
+
+class Quazar : public astro_object {
+protected:
+	char type;
+public:
+	Quazar(char t);
+	void get_qTraits();
+};
+
+class NeutronStar : public astro_object {
+protected: 
+	float radius;
+public:
+	NeutronStar(float r);
+	float barkDensity();
+	float kerVolume();
+};
