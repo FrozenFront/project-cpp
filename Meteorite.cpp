@@ -1,3 +1,4 @@
+#include<Meteorite.hpp>
 Meteorite::Meteorite(float s, char r) {
 	speed = s;
 	energy = e;
