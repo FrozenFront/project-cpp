@@ -1,3 +1,4 @@
+#include<NeuronStar.hpp>
 NeutronStar::NeutronStar(float r) {
 	radius = r;
 }
