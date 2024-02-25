@@ -1,3 +1,4 @@
+#include<Asteroid.hpp>
 Asteroid::Asteroid(char c, char s, bool e, float r, float g) {
 	chemEl = c;
 	spectralClass = s;
