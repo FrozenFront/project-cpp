@@ -1,3 +1,4 @@
+#include<Comet.hpp>
 Comet::Comet(bool t, float n) {
 	tailExists = t;
 	nucPer = n;
