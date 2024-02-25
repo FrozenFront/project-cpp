@@ -1,3 +1,4 @@
+#include<Quazar.hpp>
 Quazar::Quazar(char t) {
 	type = t;
 }
