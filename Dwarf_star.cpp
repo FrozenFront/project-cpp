@@ -1,4 +1,5 @@
-#include <Dwarf_star.hpp>
+#include "Dwarf_star.hpp"
+using namespace std;
 
 void dwarf_star::get_true_colour(){
     if (temperature > 30000 and temperature < 60000)

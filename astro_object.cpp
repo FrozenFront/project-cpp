@@ -1,8 +1,11 @@
-#include <astro_object.hpp>
+#include "astro_object.hpp"
+using namespace std;
 
-astro_object::astro_object(float m, float T){
-    mass = m;
-    temperature = T;
+astro_object::astro_object(){
+    cout << "Set the mass: " << "\n";
+    cin >> mass;
+    cout << "Set the temperature: " << "\n";
+    cin >> temperature;
 }
 
 float astro_object::get_mass(){

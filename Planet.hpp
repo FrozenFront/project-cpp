@@ -1,3 +1,9 @@
+#ifndef p_ct
+#define p_ct
+
+#include "astro_object.hpp"
+#include <iostream>
+
 class Planet: public astro_object{
 protected:
     float t_day;
@@ -8,8 +14,10 @@ protected:
     bool atmosphere;
     bool Solar_system;
 public:
-    Planet(float d, float s, float t, float T, float n, bool a, bool b, float m, float temp);
+    Planet();
     float get_volume();
     float orbital_speed();
     float own_rotation_speed();
 };
+
+#endif

@@ -1,12 +1,16 @@
-#include<Meteorite.hpp>
-Meteorite::Meteorite(float s, char r) {
-	speed = s;
-	energy = e;
-	regmaForm = r;
+#include "Meteorite.hpp"
+using namespace std;
+
+Meteorite::Meteorite() {
+	cout << "Set speed: " << "\n";
+	cin >> speed;
+	for (int i=0;i<16;i++) regmaForm[i] = 0;
+	cout << "Set regma Form: " << "\n";
+	cin >> regmaForm;	
 }
 float Meteorite::getEnergy() {
 	return mass * pow(speed, 2) / 2;
 }
-void Meteorite::regmaForm() {
+void Meteorite::getregmaForm() {
 	cout << regmaForm << endl; 
 }
