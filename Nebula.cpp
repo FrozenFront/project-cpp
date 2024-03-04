@@ -1,14 +1,17 @@
-#include <Nebula.hpp>
+#include "Nebula.hpp"
+using namespace std;
 
-Nebula::Nebula(float c, float m, float T): astro_object(m, T){
-    concentration = c;
+Nebula::Nebula(){
+    cout << "Set concentration: " << "\n";
+    cin >> concentration;
+    cout << "Set the length of type: " << "\n";
     int n;
-    std::cin >> n;
+    cin >> n;
+    cout << "Set type: " << "\n";
     for (int i = 0; i < n; i++)
         std::cin >> *(type + i);
 }
 
 float Nebula::get_particle_number() {
-    std::cin >> volume;
     return(volume * concentration);
 }

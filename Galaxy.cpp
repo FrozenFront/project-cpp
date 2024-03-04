@@ -1,7 +1,11 @@
-#include <Galaxy.hpp>
+#include "Galaxy.hpp"
+using namespace std;
 
-Galaxy::Galaxy(float td, float L, float a, float r, float m, float T): Star(L, a, r, m, T){
-    thickness_of_disk = td;
+Galaxy::Galaxy(){
+    // thickness_of_disk = td;
+    cout << "Set thickness of disk: " << "\n";
+    cin >> thickness_of_disk;
+
 }
 
 float Galaxy::get_removal_rate (float R){

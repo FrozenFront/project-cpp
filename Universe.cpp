@@ -1,8 +1,13 @@
-#include <Universe.hpp>
+#include "Universe.hpp"
+using namespace std;
 
-Universe::Universe(float a, float r, float m, float T): astro_object(m, T){
-    age = a;
-    radius = r;
+Universe::Universe(){
+    // age = a;
+    // radius = r;
+    cout << "Set age: " << "\n";
+    cin >> age;
+    cout << "Set radius: " << "\n";
+    cin >> radius;
 }
 
 float Universe::get_age(){

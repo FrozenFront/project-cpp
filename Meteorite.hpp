@@ -1,9 +1,18 @@
+#ifndef m_ct
+#define m_ct
+
+#include "astro_object.hpp"
+#include <iostream>
+#include <math.h>
+
 class Meteorite: public astro_object {
 protected: 
 	float speed;
-	char regmaForm;
+	char regmaForm[16];
 public:
-	Meteorite(float s, char r);
+	Meteorite();
 	float getEnergy();
-	void regmaForm();
+	void getregmaForm();
 };
+
+#endif

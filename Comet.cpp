@@ -1,13 +1,19 @@
-#include<Comet.hpp>
-Comet::Comet(bool t, float n) {
-	tailExists = t;
-	nucPer = n;
+#include "Comet.hpp"
+using namespace std;
+
+Comet::Comet() {
+	// tailExists = t;
+	cout << "Exists tail? 1 - true, 0 - false. " << "\n";
+	cin >> tailExists;
+	// nucPer = n;
+	cout << "Set nuclear Percentage: " << "\n";
+	cin >> nucPer;
 }
 bool Comet::hasTail() {
 	return tailExists;
 }
 float Comet::getCoreMass() {
-	return mass * nuclearPercentage / 100;
+	return mass * nucPer / 100;
 }
 
 float Comet::crustVolume() {

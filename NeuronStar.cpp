@@ -1,6 +1,7 @@
-#include<NeuronStar.hpp>
-NeutronStar::NeutronStar(float r) {
-	radius = r;
+#include "NeuronStar.hpp"
+NeutronStar::NeutronStar() {
+	std::cout << "Set redius: "<< "\n";
+	std::cin >> radius;
 }
 
 float NeutronStar::barkDensity() {

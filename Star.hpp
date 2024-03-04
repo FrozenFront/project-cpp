@@ -1,7 +1,16 @@
+#ifndef s_ct
+#define s_ct
+
+#include "Universe.hpp"
+#include <iostream>
+#include <math.h>
+
 class Star: public Universe{
 protected:
     float luminosity;
 public:
-    Star(float L, float a, float r, float m, float T);
+    Star();
     void get_type();
 };
+
+#endif

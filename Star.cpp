@@ -1,7 +1,9 @@
-#include <Star.hpp>
+#include "Star.hpp"
+using namespace std;
 
-Star::Star(float L, float a, float r, float m, float T): Universe(a, r, m, T){
-    luminosity = L;
+Star::Star(){
+    cout << "Set luminosity: " << "\n";
+    cin >> luminosity;
 }
 
 void Star::get_type(){
